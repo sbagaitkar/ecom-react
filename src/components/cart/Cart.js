@@ -29,7 +29,7 @@ export default function Cart() {
 
   const submitOrder = () => {
     if (flag < 2) {
-      navigate("/ecomm-react/login");
+      navigate("/ecom-react/login");
     } else {
       order.date = Date().slice(0, 15);
       order.email = user.email;
@@ -39,7 +39,7 @@ export default function Cart() {
       setOrder((prev) => ({ ...prev, order }));
       setOrders((prev) => [...prev, order]);
       setCartItems(() => []);
-      navigate("/ecomm-react/order");
+      navigate("/ecom-react/order");
     }
   };
 
